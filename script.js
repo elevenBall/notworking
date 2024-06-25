@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
             // Randomly choose horizontal or vertical line
             if (Math.random() > 0.5) {
                 // Draw horizontal line
-                const endX = startX + Math.random() * 200;
+                const endX = startX + Math.random() * 100;
                 const endY = startY;
                 ctx.moveTo(startX, startY);
                 ctx.lineTo(endX, endY);
             } else {
                 // Draw vertical line
                 const endX = startX;
-                const endY = startY + Math.random() * 200;
+                const endY = startY + Math.random() * 100;
                 ctx.moveTo(startX, startY);
                 ctx.lineTo(endX, endY);
             }
