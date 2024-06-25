@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.clearRect(0, 0, width, height);
 
         // Example generative art: horizontal and vertical lines
-        const numLines = 200;
+        const numLines = 50;
         for (let i = 0; i < numLines; i++) {
             ctx.beginPath();
 
