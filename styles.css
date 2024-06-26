@@ -77,9 +77,11 @@ details {
 details > summary {
     cursor: pointer;
     list-style: none;
+    
 }
 details > summary:hover {
     text-decoration: underline;
+    list-style: none;
 }
 
 details > p {
