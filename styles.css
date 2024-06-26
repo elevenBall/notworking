@@ -4,7 +4,9 @@ body {
     background-color: black;
     color: rgb(255, 58, 176);
     font-family: Arial, sans-serif;
+    font-size: 70%;
 }
+
 
 a {
     text-decoration: none;
@@ -51,6 +53,15 @@ a:active {
     margin-top: 4%;
 }
 
+.content_menu1 a{
+    font-size: 120%;
+}
+
+.content_menu1_working a {
+    font-size: 120%;
+}
+
 .content_menu1_working a:hover {
     text-decoration: underline;
+    font-size: 120%;
 }
