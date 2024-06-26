@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const canvas = document.getElementById('artCanvas');
     const ctx = canvas.getContext('2d');
     const links = document.querySelectorAll('a');
-    const titulu_sumario = document.querySelectorAll('summary');
 
     resizeCanvas();
 
@@ -63,10 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const color = colors[index % colors.length];
             link.style.color = color;
         });
-        titulu_sumario.forEach((sumario_1, index) => {
-            const color = colors[index % colors.length];
-            sumario_1.style.color = color;
-        });
     }
 
     window.addEventListener('resize', resizeCanvas);
@@ -87,5 +82,4 @@ document.addEventListener("DOMContentLoaded", function() {
             draw();
         }
     });
-
 });
