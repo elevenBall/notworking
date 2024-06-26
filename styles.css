@@ -85,5 +85,6 @@ details > summary:hover {
 details > p {
     font-size: 110%;
     color: #ffffff;
+    line-height: 170%;
     /* background-color:rgb(0, 0, 0); */
 }
