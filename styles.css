@@ -62,6 +62,9 @@ details > summary {
     cursor: pointer;
     list-style: none;
     display: inline-block; /* Ensure it behaves like a block-level element without the arrow */
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling for Safari */
+    -moz-appearance: none; /* Remove default styling for Firefox */
 }
 
 details > summary::marker, /* For most browsers */
