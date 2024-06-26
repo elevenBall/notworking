@@ -61,6 +61,16 @@ details {
 details > summary {
     cursor: pointer;
     list-style: none;
+    display: inline-block; /* Ensure it behaves like a block-level element without the arrow */
+}
+
+details > summary::marker, /* For most browsers */
+details > summary::-webkit-details-marker { /* For WebKit browsers */
+    display: none;
+}
+
+details > summary::-moz-list-item { /* For Firefox */
+    display: none;
 }
 
 details > summary:hover {
