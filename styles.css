@@ -20,7 +20,7 @@ a:link, a:visited {
 
 /* mouse over link */
 a:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
 }
 
 /* selected link */
@@ -90,3 +90,13 @@ footer {
     text-align: center;
     margin-top: 8%;
 }
+
+iframe { 
+    width: 25%;
+}
+
+img { 
+    width: 25%;
+}
+
+
