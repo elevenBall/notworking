@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: auto; /* Enable scrolling */
     background-color: black;
     color: rgb(255, 58, 176);
     font-family: Arial, sans-serif;
@@ -14,12 +14,7 @@ a {
 }
 
 /* unvisited link */
-a:link {
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
+a:link, a:visited {
     text-decoration: none;
 }
 
@@ -40,25 +35,14 @@ a:active {
     z-index: -1; /* Ensure canvas is behind content */
 }
 
-.content_menu1 {
+.content_menu1, .content_menu1_working {
     position: relative;
     z-index: 1; /* Ensure content is above canvas */
     text-align: center;
     margin-top: 4%;
 }
 
-.content_menu1_working {
-    position: relative;
-    z-index: 1; /* Ensure content is above canvas */
-    text-align: center;
-    margin-top: 4%;
-}
-
-.content_menu1 a {
-    font-size: 110%;
-}
-
-.content_menu1_working a {
+.content_menu1 a, .content_menu1_working a {
     font-size: 110%;
 }
 
@@ -77,16 +61,19 @@ details {
 details > summary {
     cursor: pointer;
     list-style: none;
-    
 }
+
 details > summary:hover {
     text-decoration: underline;
-    list-style: none;
 }
 
 details > p {
     font-size: 110%;
     color: #ffffff;
     line-height: 170%;
-    /* background-color:rgb(0, 0, 0); */
+}
+
+footer {
+    text-align: center;
+    margin-top: 8%;
 }
