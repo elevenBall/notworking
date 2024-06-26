@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: rgb(255, 58, 176);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: line-through;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+#artCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure canvas is behind content */
+}
+
+.content_menu1 {
+    position: relative;
+    z-index: 1; /* Ensure content is above canvas */
+    text-align: center;
+    margin-top: 4%;
+}
+
+.content_menu1_working {
+    position: relative;
+    z-index: 1; /* Ensure content is above canvas */
+    text-align: center;
+    margin-top: 4%;
+}
+
+.content_menu1_working a:hover {
+    text-decoration: underline;
+}
