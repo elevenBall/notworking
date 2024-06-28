@@ -39,7 +39,7 @@ a:active {
     position: relative;
     z-index: 1; /* Ensure content is above canvas */
     text-align: center;
-    margin-top: 4%;
+    margin-top: 3vh; /* Adjusted to use viewport height */
 }
 
 .content_menu1 a, .content_menu1_working a {
@@ -55,7 +55,7 @@ details {
     position: relative;
     font-size: 110%;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 1vh; /* Adjusted to use viewport height */
 }
 
 details > summary {
@@ -88,7 +88,7 @@ details > p {
 
 footer {
     text-align: center;
-    margin-top: 8%;
+    margin-top: 8vh; /* Adjusted to use viewport height */
 }
 
 iframe { 
@@ -98,5 +98,3 @@ iframe {
 img { 
     width: 25%;
 }
-
-
