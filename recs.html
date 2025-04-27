@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>recs</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style_2.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <h1>recs</h1>
+    <div id="map"></div>
+
+    <script>
+        // Inicializar o mapa
+        const map = L.map('map').setView([41.1579, -8.6291], 4); // Porto como centro inicial
+
+        // Adicionar o fundo do mapa (tiles)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(map);
+
+        // Definir o ícone personalizado
+        const customIcon = L.icon({
+            iconUrl: 'rec.png', // Substituir com o caminho do ícone
+            iconSize: [32, 32], // Tamanho do ícone
+            iconAnchor: [16, 32], // Onde o ponto de ancoragem do ícone é
+            popupAnchor: [0, -32] // Posição do popup em relação ao ícone
+        });
+
+        // Carregar os dados dos field recordings
+        fetch('fieldrecordings.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(recording => {
+                    const marker = L.marker(recording.coordinates, { icon: customIcon }).addTo(map);
+                    const audioLink = transformGoogleDriveLink(recording.link);
+                    marker.bindPopup(`
+                        <b>${recording.date} - ${recording.name}</b><br>
+                        <a href="${recording.link}" target="_blank" style="color:blue; text-decoration:underline;">link p/ drive</a>
+                    `);
+                });
+            });
+
+        // Função para transformar link do Drive em link direto
+        function transformGoogleDriveLink(driveLink) {
+            const fileIdMatch = driveLink.match(/[-\w]{25,}/);
+            if (fileIdMatch) {
+                const fileId = fileIdMatch[0];
+                return `https://docs.google.com/uc?export=download&id=${fileId}`;
+            } else {
+                return driveLink; // fallback
+            }
+        }
+    </script>
+</body>
+
+</html>
