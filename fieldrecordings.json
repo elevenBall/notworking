@@ -17,5 +17,74 @@
             37.015423806289455, -7.933494906465809
         ],
         "link": "https://drive.google.com/file/d/1cr-aVppXHLLZ8A3M6c_3S_AbUbkgtN5g/view?usp=sharing"
+    },
+    {
+        "date": "2024_08_09",
+        "code": "au_rabagao",
+        "name": "rioRabagao_codecoso_passaBarco_pessoasFalam",
+        "coordinates": [
+            41.69092115558324, -7.955628642436378
+        ],
+        "link": "https://drive.google.com/file/d/1n93XF0eKDXUUWJ1SDEluoZpsPg5ROEqJ/view?usp=sharing"
+    }
+    ,
+    {
+        "date": "2024_08_10",
+        "code": "au_outeiro",
+        "name": "Outeiro_Paradela_Montalegre_meioDoDia",
+        "coordinates": [
+            41.7737661713283, -7.959399231495873
+        ],
+        "link": "https://drive.google.com/file/d/1Poon6rjIa7xXo9jG8Ixu37WKKBNTLn2_/view?usp=sharing"
+    }
+    ,
+    {
+        "date": "2024_08_16",
+        "code": "au_bueu",
+        "name": "bueu_praiaDeLagos_noite",
+        "coordinates": [
+            42.32518292059117, -8.825156842300014
+        ],
+        "link": "https://drive.google.com/file/d/1tP5npKOIgvsRi7H1FkRDx9Z98i1kdMp8/view?usp=sharing"
+    }
+    ,
+    {
+        "date": "2024_08_13",
+        "code": "au_grove",
+        "name": "oGrove_SanVicente_frenteCampingMoreiras_meioDoDia",
+        "coordinates": [
+            42.483327324493416, -8.890325896279345
+        ],
+        "link": "https://drive.google.com/file/d/1jnFXiLVBdNarogMtd6ZguibbRmJG21NW/view?usp=sharing"
+    }
+    ,
+    {
+        "date": "2024_08_04",
+        "code": "au_covelo",
+        "name": "esperarPorJaci_covelo",
+        "coordinates": [
+            41.16516916385984, -8.606413601142714
+        ],
+        "link": "https://drive.google.com/file/d/1sNIapOBmCbBL7WxYZf9g9D5A0mpFlxuw/view?usp=drive_link"
+    }
+    ,
+    {
+        "date": "2024_08_03",
+        "code": "au_estu_casa",
+        "name": "estudio_ate_casa_a_pe",
+        "coordinates": [
+            41.15298421101928, -8.589134339415796
+        ],
+        "link": "https://drive.google.com/file/d/105GRHel9njZnElMx6sjjJuFL5nc5xIni/view?usp=drive_link"
+    }
+    ,
+    {
+        "date": "2024_08_17",
+        "code": "au_hidro_cerv",
+        "name": "hidrofoneDIY_Cerveira_praiaDaLenta_passaUmBarco",
+        "coordinates": [
+            41.95722432511894, -8.746455360535913
+        ],
+        "link": "https://drive.google.com/file/d/1vXW8QexbYBu6bBHVx6LOM5_f-k6EvtZa/view?usp=drive_link"
     }
 ]
