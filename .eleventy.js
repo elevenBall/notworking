@@ -1,10 +1,12 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/imgs");
-  return{
+  eleventyConfig.addPassthroughCopy("src/field_recs");
+
+  return {
     dir: {
-      input: "src", // source files
-      output: "public", // output files
+      input: "src",
+      output: "public",
     },
   };
 };
