@@ -43,3 +43,61 @@ footer {
     width: min(470px, 100%);
     height: auto;
 }
+
+
+
+.work_item {
+    margin-bottom: 5.5rem;
+}
+.thumb_work {
+    width: min(404px, 100%);
+    height: auto;
+}
+
+.img_wrks {
+    width: min(666px, 100%);
+    height: auto;
+}
+
+/* texto dos projectos: bloco centrado na pagina, texto justificado */
+.texto {
+    width: min(666px, 100%);
+    margin: 0 auto;
+    text-align: justify;
+    hyphens: none;
+    font-size: 0.85rem;
+}
+.lista {
+    width: min(666px, 100%);
+    margin: 1rem auto;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.video-short {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 9 / 16;
+    margin: 20px auto;
+}
+
+.video-short iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* blocos de codigo */
+.codigo {
+    width: min(470px, 100%);
+    margin: 1rem auto;
+    text-align: left;
+}
+.codigo pre {
+    overflow-x: auto;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    tab-size: 2;
+    background: rgba(127, 127, 127, 0.15);
+}
