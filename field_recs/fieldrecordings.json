@@ -87,4 +87,14 @@
         ],
         "link": "https://drive.google.com/file/d/1vXW8QexbYBu6bBHVx6LOM5_f-k6EvtZa/view?usp=drive_link"
     }
+    ,
+    {
+        "date": "2025_05_01",
+        "code": "au_thunder_bonfim_2025_05",
+        "name": "thunderstorm - 1rst May 2025, Bonfim, Porto, Portugal. 23h50",
+        "coordinates": [
+            41.14916752697948, -8.5970700211184
+        ],
+        "embed": "https://archive.org/embed/2025_05_01_thunderstorm_bonfimPorto"
+    }
 ]

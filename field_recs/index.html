@@ -105,18 +105,32 @@ min-width: 0;
                 }).addTo(map);
 
                 const popup = document.createElement('div');
+
                 const heading = document.createElement('strong');
                 heading.textContent = `${recording.date} — ${recording.name}`;
 
-                const lineBreak = document.createElement('br');
-                const link = document.createElement('a');
-                link.href = recording.link;
-                link.target = '_blank';
-                link.rel = 'noopener noreferrer';
-                link.textContent = 'link p/ drive';
+                popup.append(heading, document.createElement('br'));
 
-                popup.append(heading, lineBreak, link);
-                marker.bindPopup(popup);
+                if (recording.embed) {
+                    // Gravações novas: player do archive.org
+                    const player = document.createElement('iframe');
+                    player.src = recording.embed;
+                    player.width = 300;
+                    player.height = 30;
+                    player.frameBorder = 0;
+                    player.allowFullscreen = true;
+                    popup.append(player);
+                } else if (recording.link) {
+                    // Gravações antigas: link para o drive
+                    const link = document.createElement('a');
+                    link.href = recording.link;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    link.textContent = 'link p/ drive';
+                    popup.append(link);
+                }
+
+                marker.bindPopup(popup, { minWidth: 320 });
                 markers.push(marker);
             });
         })
